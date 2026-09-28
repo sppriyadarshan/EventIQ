@@ -1,0 +1,33 @@
+{
+  "model_algorithm": "LightGBM Regressor",
+  "explainer_type": "SHAP TreeExplainer",
+  "dataset": {
+    "postgres_available": true,
+    "database_records_used": 8,
+    "synthetic_records_used": 120,
+    "total_records_used": 128,
+    "train_samples": 102,
+    "test_samples": 26
+  },
+  "test_metrics": {
+    "mae": 35.412,
+    "rmse": 53.767,
+    "r2_score": 0.9436
+  },
+  "features": [
+    "registered_count",
+    "expected_attendance",
+    "venue_capacity",
+    "duration_hours",
+    "is_holiday",
+    "budget_allocated",
+    "budget_spent",
+    "reg_to_capacity_ratio",
+    "expected_to_capacity_ratio",
+    "event_type",
+    "department_code",
+    "weather_condition"
+  ],
+  "is_prototype": true,
+  "notice": "Evaluation metrics represent empirical performance on held-out test set."
+}
